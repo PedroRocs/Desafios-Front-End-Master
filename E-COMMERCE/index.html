@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body class="corpo">
+  <div class="back"></div>
+
+  <!-- CABEÇÃLHO  -->
+  <header class="cabecalho-nav">
+    <div class="content">
+      <!-- NAVBAR -->
+      <nav class="nav-menu">
+        <div class="logo">
+          <img src="images/logo.svg">
+          <div class="hamburguer">
+            <img src="images/icon-menu.svg" alt="" class="btn-hamburguer">
+          </div>
+        </div>
+
+        <!-- ITEMS DA NAVBAR -->
+        <ul class="list-menu">
+          <button class="btn-close">
+            <img src="images/icon-close.svg" alt="" class="close">
+          </button>
+          <li class="item-menu">Collections</li>
+          <li class="item-menu">Men</li>
+          <li class="item-menu">Women</li>
+          <li class="item-menu">About</li>
+          <li class="item-menu">Contact</li>
+        </ul>
+      </nav>
+      <!-- Final da Navabr -->
+      <!-- ICONES DO LADO DIREITO  -->
+      <div class="icons">
+        <!-- CARRINHO -->
+        <div class="cart">
+          <div class="number"></div>
+          <img src="images/icon-cart.svg" alt="" id="cart">
+          <!-- Cobteudo do carrinho do carrinho -->
+          <div class="cart-info">
+            <div class="title-cart">Cart</div>
+            <div class="content-cart">
+              <div class="title-product-cart">
+                <div class="img-product-cart">
+                  <img src="images/image-product-1-thumbnail.jpg">
+                </div>
+
+                <h2>Fall Limited Edition Sneakers</h2>
+                <span>$125.00 x<span id="quantidade-cart"></span>
+                  <span id="total-cart"></span></span>
+                <div class="delete-product">
+                  <img src="images/icon-delete.svg" alt="">
+                </div>
+              </div>
+              <div class="btn-cart">Checkout</div>
+              <div class="vazio">
+                <p>Your cart is empty</p>
+              </div>
+            </div>
+          </div>
+          <!--  Final do conteudo do carinho-->
+        </div>
+        <!-- Fianl do Feature do Carrinho -->
+        <!-- Icone do usario  -->
+        <div class="avatar">
+          <img src="images/image-avatar.png" alt="" srcset="" id="avatar" tabindex="0">
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </header>
+  <!-- FINAL DO CABEÇÃLHO  -->
+
+  <!-- CONTAINER DO CARROSSEL QUE APARECE QUANDO É CLICADO NO CARROSSEL PRINCIPAL -->
+  <div class="carrossel-modal">
+    <!-- IMAGENS DOS PRODUTOS -->
+    <div class="imagens-products-modal">
+
+      <!-- CONTAINER PRINCIPAL -->
+      <div class="rect-principal">
+        <img src="images/image-product-1.jpg" class="carrossel">
+        <img src="images/image-product-2.jpg" class="carrossel">
+        <img src="images/image-product-3.jpg" class="carrossel">
+        <img src="images/image-product-4.jpg" class="carrossel">
+
+
+      </div>
+
+      <!-- Preview das iamgens dos produtos -->
+      <div class="rect-1 index modal">
+        <img src="images/image-product-1-thumbnail.jpg">
+      </div>
+      <div class="rect-2 index modal">
+        <img src="images/image-product-2-thumbnail.jpg">
+      </div>
+      <div class="rect-3 index modal"><img src="images/image-product-3-thumbnail.jpg"></div>
+      <div class="rect-4 index modal">
+        <img src="images/image-product-4-thumbnail.jpg">
+      </div>
+<!-- BOTÕES DE AVANÇAR O CARROSSEL  -->
+      <button class="next">
+        <img src="images/icon-next.svg" alt="" srcset=""></button>
+      <button class="previous">
+        <img src="images/icon-previous.svg" alt="" srcset="">
+      </button>
+
+<!-- BOTÃO PARA FECHAR O CARROSSEL  -->
+      <button class="close-modal">
+        <svg xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" />
+        </svg>
+      </button>
+
+    </div>
+
+  </div>
+  <!-- CONTAINER INFORMAÇÕES IMAGENS DO PRODUTO  -->
+  <main class="content-product">
+    <!-- IMAGENS DOS PRODUTOS -->
+    <div class="imagens-products">
+      <div class="rect-principal">
+        <img src="images/image-product-1.jpg" class="carrossel">
+        <img src="images/image-product-2.jpg" class="carrossel">
+        <img src="images/image-product-3.jpg" class="carrossel">
+        <img src="images/image-product-4.jpg" class="carrossel">
+      </div>
+      <div class="rect-1 index">
+        <img src="images/image-product-1-thumbnail.jpg">
+      </div>
+      <div class="rect-2 index"><img src="images/image-product-2-thumbnail.jpg"></div>
+      <div class="rect-3 index"><img src="images/image-product-3-thumbnail.jpg"></div>
+      <div class="rect-4 index"><img src="images/image-product-4-thumbnail.jpg"></div>
+    </div>
+
+<!-- INFORMAÇÕES DO PRODUTO  -->
+    <div class="info-products">
+
+      <div class="info-products-content">
+        <span>SNEAKER COMPANY</span>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+          durable rubber outer sole, they’ll withstand everything the weather can offer.
+        </p>
+      </div>
+
+      <div class="info-product-value">
+        <span class="preco-total">$125.00 <span class="preco-desconto">50%</span></span>
+        <span class="preco-antigo">$<s>250.00</s></span>
+      </div>
+<!-- ADICIONAR AO CARRINHO  -->
+      <div class="cart-quantidade">
+        <div class="btn-add">
+          <button class="quant diminuir">-</button> <span class="number-quantidade">0</span><button
+            class="quant adicionar">+</button>
+        </div>
+        <button class="carrinho"><svg xlms="http://www.w3.org/2000/svg">
+            <path
+              d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z">
+            </path>
+          </svg> Add to cart</button>
+      </div>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
